@@ -424,3 +424,50 @@ th {
 }
 
 
+body{
+	background-color:green;
+}
+.scores{
+	background-color:white;
+	width:78%;
+	margin:auto;
+	padding:6%;
+}
+.players {
+	float:left;
+	width:40%;
+	margin:2% 2% 3em 2%;
+}
+h2{
+	text-align:center;
+}
+
+.players div{
+	font-size:48px;
+	text-align:center;
+	padding:3em 0% 3em 0%;
+}
+
+.balls-potted{
+	clear:both;
+	background-color:white;
+	text-align:center;
+	margin-top:3em;
+}
+.balls-potted button{
+	border-radius:50%;
+	width:100px;
+	height:100px;
+}
+.balls-potted button:nth-child(1){background-color:#CCCCCC;}
+.balls-potted button:nth-child(2){background-color:#FF0000;}
+.balls-potted button:nth-child(3){background-color:#fdd235;}
+.balls-potted button:nth-child(4){background-color:#367c46;}
+.balls-potted button:nth-child(5){background-color:#8d6f53;}
+.balls-potted button:nth-child(6){background-color:#0749db;}
+.balls-potted button:nth-child(7){background-color:#f5537c;}
+.balls-potted button:nth-child(8){background-color:#000000;}
+
+
+
+
