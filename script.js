@@ -6,6 +6,8 @@ var redsRemaining = 15;
 var ballOn=2; //start the colours sequence with yellow
 var playerOneScoreEl = document.getElementById("score-player-one");
 var playerTwoScoreEl = document.getElementById("score-player-two");
+var playerOne = document.getElementById("name1");
+var playerTwo = document.getElementById("name2");
 var buttonEl = document.getElementsByTagName("button")[0];
 var  redButton = document.getElementsByTagName("button")[1];
 var currentBallPottedEl = document.querySelector(".balls-potted");
@@ -28,7 +30,8 @@ currentBallPottedEl.onclick = function(e) {
 		  }
 		  redsRemaining--;
 		  if (redsRemaining==0){
-			redButton.style.display="none";
+			//redButton.style.display="none";
+			redButton.classList.add("none-left");
 			console.log('just hidden red button');
 		  }
 		  break; //goes to the end of the switch
@@ -46,7 +49,8 @@ currentBallPottedEl.onclick = function(e) {
   }
   else{ //potting the colours in order now
 		if (addend===ballOn){
-			target.style.display="none";
+			//target.style.display="none";
+			target.classList.add("none-left");
 			ballOn++;
 		}
 		else{ //must be a foul
@@ -96,12 +100,12 @@ function switchPlayer() {
 
 function highlightCurrentPlayer(){
 	if (1===currentPlayer){
-		playerOneScoreEl.style.backgroundColor = "red";
-		playerTwoScoreEl.style.backgroundColor = null;
+		playerOne.style.backgroundColor = "red";
+		playerTwo.style.backgroundColor = "transparent";
 	}
 	else{
-		playerOneScoreEl.style.backgroundColor = null;  
-		playerTwoScoreEl.style.backgroundColor = "red";
+		playerOne.style.backgroundColor = "transparent";  
+		playerTwo.style.backgroundColor = "red";
 	}
 }
 
