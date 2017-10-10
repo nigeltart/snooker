@@ -1,4 +1,4 @@
-var playerOneScore = 0; //initialise
+var playerOneScore = 0; // initialise
 var playerTwoScore = 0; //initialise
 var currentPlayer = 1; //initialise
 var lastBall = 99; //initialise - 99 is a dummy value
